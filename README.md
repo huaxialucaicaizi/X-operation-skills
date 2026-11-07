@@ -18,7 +18,7 @@ X 运营 Skill 套件：把英文产品增长类播客，做成中文增长干�
 | ⑥ | **[cover-and-figures](skills/cover-and-figures/SKILL.md) 头图配图** | 观点先于图型，HTML/CSS 本地渲染，对表目检 |
 | ⑦ | **[publish-engage](skills/publish-engage/SKILL.md) 发布互动** | 预览包和回复草稿，逐条授权后才发 |
 | ⑧ | **[data-review](skills/data-review/SKILL.md) 数据复盘** | 用账号自己的数据做周复盘，回流选题和标题 |
-| ⑨ | **[x-growth](skills/x-growth/SKILL.md) X 涨粉** | 策略层：主页定位、一周计划与分发、互动与合作草稿、周度涨粉复盘；账号与目标只放本地配置 |
+| ⑨ | **[x-growth](skills/x-growth/SKILL.md) X 涨粉** | 策略层：当日 AI 热点联动增长视角、主页定位、一周计划与分发、互动与合作草稿、周度涨粉复盘；账号与目标只放本地配置 |
 
 共用部分：
 

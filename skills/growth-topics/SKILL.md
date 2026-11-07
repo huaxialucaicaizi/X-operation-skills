@@ -14,6 +14,7 @@ description: 从播客证据卡和读者问题中挑选增长选题并出大纲�
 - 已发内容清单
 - 中文同题检索结果
 - 「数据复盘」的回流建议（如有）
+- 「X 涨粉」给出的当日热点候选（如有；与其他选题过同一道硬门槛）
 - 取舍库：[../../shared/templates/decision-library.md](../../shared/templates/decision-library.md) 的「一、选题取舍」「四、已确认偏好」
 
 ## 输出
