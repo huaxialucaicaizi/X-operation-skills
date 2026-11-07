@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.idea/
+.vscode/
+
+# 本地真实工作数据（来源表、取舍库、复盘数据等），默认不公开
+local/
