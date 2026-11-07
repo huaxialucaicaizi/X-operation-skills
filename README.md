@@ -2,7 +2,7 @@
 
 X 运营 Skill 套件：把英文产品增长类播客，做成中文增长干货，并在 X 上发布和复盘。
 
-一个仓库，8 个入口 Skill。每个入口可以单独用，也可以按顺序串起来；它们共用同一套来源表、证据编号、审批记录和取舍库。
+一个仓库，9 个入口 Skill：8 个内容生产入口，加 1 个涨粉策略层。每个入口可以单独用，也可以按顺序串起来；它们共用同一套来源表、证据编号、审批记录和取舍库。
 
 核心是获客、激活、留存、变现、扩张的具体动作、机制、证据和适用条件。传播角度只服务表达，不决定选题。
 
@@ -18,6 +18,7 @@ X 运营 Skill 套件：把英文产品增长类播客，做成中文增长干�
 | ⑥ | **[cover-and-figures](skills/cover-and-figures/SKILL.md) 头图配图** | 观点先于图型，HTML/CSS 本地渲染，对表目检 |
 | ⑦ | **[publish-engage](skills/publish-engage/SKILL.md) 发布互动** | 预览包和回复草稿，逐条授权后才发 |
 | ⑧ | **[data-review](skills/data-review/SKILL.md) 数据复盘** | 用账号自己的数据做周复盘，回流选题和标题 |
+| ⑨ | **[x-growth](skills/x-growth/SKILL.md) X 涨粉** | 策略层：主页定位、一周计划与分发、互动与合作草稿、周度涨粉复盘；账号与目标只放本地配置 |
 
 共用部分：
 
@@ -32,6 +33,8 @@ X 运营 Skill 套件：把英文产品增长类播客，做成中文增长干�
 ① 播客拆解 → ② 增长选题与大纲 → 【作者确认大纲】
    → ④ 长文写作（中途调用 ③ 标题）→ ⑤ 去 AI 味 → 【作者审定正文和标题】
    → ⑥ 头图配图 → ⑦ 完整预览与逐条授权 → ⑧ 数据复盘 → 回流 ② ③
+
+⑨ X 涨粉：策略层，读 ⑧ 的数据，给 ② ④ 下本周配比与分发需求，互动和合作草稿交 ⑦ 授权发送
 ```
 
 三道闸门：大纲确认前不写全文；正文和标题审定前不做图；作者对展示过的单条明确说「发」之前不发布。
@@ -53,7 +56,7 @@ cp -r shared ~/.claude/shared
 
 其他 Agent 的 skills 目录位置以其文档为准。只装单个入口时，没有 `shared/` 也能运行，但输出会注明「未读取共用来源表/取舍库」。
 
-真实的来源表、取舍库、复盘数据建议放在本地 `local/` 目录（已在 `.gitignore` 中忽略），默认不公开。
+真实的来源表、取舍库、复盘数据，以及 X 涨粉的账号配置（从 `skills/x-growth/templates/growth-config.example.md` 复制），建议放在本地 `local/` 目录（已在 `.gitignore` 中忽略），默认不公开。
 
 ## 这个套件不做什么
 
@@ -81,12 +84,12 @@ python3 scripts/validate.py
 | [op7418/Humanizer-zh](https://github.com/op7418/Humanizer-zh) | MIT，Copyright (c) 2026 歸藏 | 「改了不走样」：信息与确定程度守恒、作者声音、逐项对照（归纳重述） | 去 AI 味 |
 | [AugustusW/audio-tldr-skill](https://github.com/AugustusW/audio-tldr-skill) | MIT | 转写缓存、原稿与校正稿分开、专名记录 | 播客拆解 |
 | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | MIT | 仅作为可选的本地转写工具 | 播客拆解 |
-| [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT | 受众问题、信息增量检查；账号自身数据与反馈循环 | 增长选题、数据复盘 |
+| [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT | 受众问题、信息增量检查、内容复用；账号自身数据与反馈循环 | 增长选题、数据复盘、X 涨粉 |
 | [Gracker/gracker-writing](https://github.com/Gracker/gracker-writing) | MIT | 事实强度、整稿与局部审查分开 | 长文写作 |
 | [criccomini/write-like-paul-graham](https://github.com/criccomini/write-like-paul-graham) | MIT | 先论点骨架、前几段给答案 | 长文写作 |
 | [codejunkie99/x-article-skills](https://github.com/codejunkie99/x-article-skills) | 未识别 | 只借鉴「早给价值、讲清作者增量」的思路，未复制任何文本 | 长文写作 |
 | [JimLiu/baoyu-skills](https://github.com/JimLiu/baoyu-skills) | MIT | 信息结构与视觉风格分开、按信息关系选图型；发布前预览与图片位置检查 | 头图配图、发布互动 |
-| [Jakeschincariol/x-agent-skill](https://github.com/Jakeschincariol/x-agent-skill) | MIT | 回复分诊；账号自身数据、每千曝光指标、统一观察窗 | 发布互动、数据复盘 |
+| [Jakeschincariol/x-agent-skill](https://github.com/Jakeschincariol/x-agent-skill) | MIT | 回复分诊；账号自身数据、每千曝光指标、统一观察窗；x-plan 的周计划统筹内容与互动、主页承诺与置顶一致 | 发布互动、数据复盘、X 涨粉 |
 
 可选外部工具（本仓库未包含、未复制其任何内容）：[larashero3-dotcom/lieflat-less-ai-tone](https://github.com/larashero3-dotcom/lieflat-less-ai-tone)（CC BY-NC 4.0）。去 AI 味入口只写「本地装了就调用」，许可是否适用由使用者自行确认。
 

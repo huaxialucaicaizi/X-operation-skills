@@ -16,6 +16,7 @@ SKILLS = {
     "cover-and-figures": "头图配图",
     "publish-engage": "发布互动",
     "data-review": "数据复盘",
+    "x-growth": "X 涨粉",
 }
 
 REQUIRED_FILES = [
@@ -33,6 +34,7 @@ REQUIRED_FILES = [
     "skills/longform-writing/templates/x-article.md",
     "skills/de-ai-tone/references/banned-patterns.md",
     "skills/de-ai-tone/references/meaning-preservation.md",
+    "skills/x-growth/templates/growth-config.example.md",
 ]
 
 # Patterns that must not appear anywhere in tracked text files (except this script).
